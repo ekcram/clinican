@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>CliniCan Trassierra</title>
+    <link rel="stylesheet" href="librerias/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="librerias/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="librerias/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <img src="imagenes/logotipo.png" alt=" CliniCan">
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row datosConsulta">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" autocomplete="off">
+                        <fieldset>
+                            <legend class="text-center header">CONSULTAS CliniCanTRASSIERRA</legend>
+
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fas fa-user-md bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <select id="vet" name="vet" class="form-control">
+                                        <option value="">Seleccione un veterinario</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fas fa-users bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <select id="cli" name="cli" class="form-control">
+                                        <option value="">Seleccione un cliente</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fas fa-dog bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <select id="can" name="can" class="form-control">
+                                        <option value="">Seleccione una mascota</option>
+                                    </select>
+
+                                </div>
+                                <button type='button' id="addCan" class="btn btn-success">Añadir</button>
+                                <button type='button' id="verHis" class="btn btn-secondary ml-2">Ver historial</button>
+                            </div>
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fas fa-calendar-alt bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <input id="fechaC" name="fechaC" type="date" placeholder="Fecha de Consulta"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fas fa-clock bigicon"></i></span>
+                                <div class="col-md-4">
+                                    <input id="horaC" name="horaC" type="time" placeholder="Hora de Consulta"
+                                        class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 card">
+                                    <h5 class="card-header">Tratamientos en Consulta</h5>
+                                    <div class="card-body consulta">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 card ml-2">
+                                    <h5 class="card-header">Tratamientos Generales</h5>
+                                    <div class="card-body tratamientos">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row text-center">
+                                <div class="col-md-12">
+                                    <button type="submit" class="boton btn btn-primary btn-lg">Guardar</button>
+
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="perro">
+            <hr>
+            <div class="well well-sm">
+                <form class="frmAddPerro" autocomplete="off">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="chip">Chip:</label>
+                            <input type="text" class="form-control" id="chip" name="chip">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="nomPer">Nombre del perro:</label>
+                            <input type="text" class="form-control" id="nomPer" name="nomPer">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaN">Fecha de Nacimiento:</label>
+                            <input type="date" class="form-control" id="fechaN" name="fechaN">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="raza">raza:</label>
+                            <input type="text" class="form-control" id="raza" name="raza">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <button type="submit" class="boton btn btn-primary btn-lg">Añadir</button>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="historial">
+
+        </div>
+    </div>
+
+    <!-- librerias -->
+    <script src="librerias/jquery/jquery.min.js"></script>
+    <script src="librerias/jquery-ui/jquery-ui.min.js"></script>
+    <script src="librerias/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="librerias/jquery-validation/dist/localization/messages_es.min.js"></script>
+    <script src="librerias/bootstrap/js/bootstrap.min.js"></script>
+    <script src="librerias/fontawesome/js/all.min.js"></script>
+    <script src="librerias/sweetalert/sweetalert2.all.min.js"></script>
+    <script src="librerias/crearConexion.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

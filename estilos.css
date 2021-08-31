@@ -1,0 +1,33 @@
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    top: 5px;
+    left: 0px
+}
+
+#imagen {
+    position: absolute;
+}
+
+#perro {
+    display: none;
+}
+
+.card {
+    height: 300px;
+}
+
+em.error {
+    color: red;
+}
